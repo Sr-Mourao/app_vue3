@@ -23,6 +23,11 @@ const routes = [
         name: "verifyEmail",
         component: () => import("@/views/verifyemail.vue"),
       },
+      {
+        path: "/esqueci-senha",
+        name: "forgotpassword",
+        component: () => import("@/views/forgotpassword.vue"),
+      },
     ],
   },
   {

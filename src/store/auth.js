@@ -40,6 +40,11 @@ export const useAuth = defineStore("auth", {
         token,
       });
     },
+    forgotPassword(email) {
+      return axios.post("api/forgot-password", {
+        email,
+      });
+    },
   },
   getters: {
     isLoggendIn() {
