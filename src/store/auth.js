@@ -45,6 +45,12 @@ export const useAuth = defineStore("auth", {
         email,
       });
     },
+    resetPassword(token, password) {
+      return axios.post("api/reset-password", {
+        token,
+        password
+      });
+    },
   },
   getters: {
     isLoggendIn() {
